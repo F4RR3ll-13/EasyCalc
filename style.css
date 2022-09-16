@@ -8,7 +8,7 @@ body {
 .container {
    border-radius: 9px;
    background: #ffffff;
-   box-shadow: 7px 7px 42px #d6d6d6, -7px -7px 42px #ffffff;
+   box-shadow: 7px 7px 42px #000, -7px -7px 42px #000;
    width: 300px;
    height: 400px;
    padding: 10px;
