@@ -12,10 +12,13 @@ function display(val){
 */
 
 function solve() {
-   let x = document.getElementById('result').value;
-   let y = eval(x);
-   document.getElementById('result').value = y;
-   return y;
+   let calc = eval(document.getElementById("result").value);
+   if (isNaN(calc)){
+      return (document.getElementById("result").value = "0=");
+   }else{
+      document.getElementById("result").value = calc;
+      return calc;
+   }
 }
 
 /*
@@ -27,6 +30,12 @@ function clearScreen(){
    document.getElementById('result').value = '';
 }
 
+/*
+Функция вызывается когда пользователь нажимает на кнопку BackSpace
+после нажатия из input удаляется символ
+*/
 
-
-
+function deleteSymbol() {
+   var exp = document.getElementById("result").value;
+   document.getElementById("result").value = exp.substring(0, exp.length - 1);
+}
