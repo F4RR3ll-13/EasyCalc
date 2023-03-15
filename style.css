@@ -73,6 +73,10 @@ input {
    background-color: #f17377;
 }
 
+.delete:hover {
+   background-color: #f17377;
+}
+
 .equal-sign {
    background-color: #25a8e0;
    border-color: #25a8e0;
